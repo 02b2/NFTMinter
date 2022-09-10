@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Upload from '../components/Upload'
 import { ConnectButton } from "@web3uikit/web3"
 import { useMoralis } from 'react-moralis'
 import { useEffect, useState } from 'react'
@@ -15,20 +13,23 @@ export default function Home() {
  // if isWeb3Enabled is false, we stay on the login page
   useEffect(() => {
     if(isWeb3Enabled) {
-      router.push('/dashboard')
+      router.push('/home')
     }
   }, [isWeb3Enabled])
 
   return (
-    <div className='w-screen h-screen flex'>
+    <div className='w-screen h-screen text-white bg-black flex'>
       <Head>
-        <title>DEROHive</title>
-        <meta name="DEROHive" content="Web3 Whistleblower Documents" />
+        <title>CryptoEscondido</title>
+        <meta className="CryptoEscondido" content="Web3 Whistleblower Documents" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* Connect Button imported from web3uikit
+      <nav>
+     {/* Connect Button imported from web3uikit
           Connects to many different wallets out of the box*/}
       <ConnectButton moralisAuth={true} />
+      <h1>Please connect your wallet</h1>
+      </nav>
     </div>
   )
 }
