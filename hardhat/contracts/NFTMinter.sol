@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.4;
+pragma solidity ^0.8.7;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
@@ -10,7 +10,7 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Royalty.sol";
 contract NFTMinter is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721Royalty {
     // set mint price
     uint256 public constant mintPrice = 0;
-
+    // define royalty info and mappings
     RoyaltyInfo private _defaultRoyaltyInfo;
     mapping(uint256 => RoyaltyInfo) private _tokenRoyaltyInfo;
 
@@ -18,7 +18,6 @@ contract NFTMinter is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721Royalty 
         internal
         override(ERC721, ERC721Enumerable)
         {
-            require(msg.value == 0, "Resale of Sensitive Information is Prohibited");
             super._beforeTokenTransfer(from, to, tokenId);
         }
 
@@ -61,7 +60,7 @@ contract NFTMinter is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721Royalty 
         uint256 mintIndex = totalSupply();
         _safeMint(msg.sender, mintIndex);
         _setTokenURI(mintIndex, _uri);
-        _setDefaultRoyalty(msg.sender, 100);
+        _setDefaultRoyalty(msg.sender, 80);
     }
 
 

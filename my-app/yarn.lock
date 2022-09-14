@@ -3499,6 +3499,11 @@
   "resolved" "https://registry.npmjs.org/domain-browser/-/domain-browser-4.22.0.tgz"
   "version" "4.22.0"
 
+"dotenv@^16.0.2":
+  "integrity" "sha512-JvpYKUmzQhYoIFgK2MOnF3bciIZoItIIoryihy0rIA+H4Jy0FmgyKYAHCTN98P5ybGSJcIFbh6QKeJdtZd1qhA=="
+  "resolved" "https://registry.npmjs.org/dotenv/-/dotenv-16.0.2.tgz"
+  "version" "16.0.2"
+
 "drbg.js@^1.0.1":
   "integrity" "sha512-F4wZ06PvqxYLFEZKkFxTDcns9oFNk34hvmJSEwdzsxVQ8YI5YaxtACgQatkYgv2VI2CFkUd2Y+xosPQnHv809g=="
   "resolved" "https://registry.npmjs.org/drbg.js/-/drbg.js-1.0.1.tgz"

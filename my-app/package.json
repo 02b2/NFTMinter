@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "moralis:cloud": "moralis-admin-cli watch-cloud-folder --moralisApiKey 4bYBdOl35aFp13o --moralisApiSecret HnfAZH1CvxH2dxY --moralisSubdomain hq7xmfiw4znu.usemoralis.com --autoSave 1 --moralisCloudfolder ./cloudFunctions"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
@@ -16,6 +17,7 @@
     "@walletconnect/web3-provider": "^1.8.0",
     "@web3auth/web3auth": "^2.0.2",
     "all": "^0.0.0",
+    "dotenv": "^16.0.2",
     "magic-sdk": "^9.0.0",
     "moralis": "^2.2.0",
     "moralis-v1": "^1.11.0",

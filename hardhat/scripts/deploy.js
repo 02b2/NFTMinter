@@ -16,6 +16,16 @@ async function main() {
   console.log(
     'NFT MInter Contract Deployed To Mumbai TestNet Successfully: ' + nftminter.address
   );
+
+
+  const Marketplace = await hre.ethers.getContractFactory("NftMarketplace");
+  const marketplace = await Marketplace.deploy();
+
+  await marketplace.deployed();
+
+  console.log(
+    'Marketplace Contract Deployed To Mumbai TestNet Successfully: ' + marketplace.address
+  );
 }
 
 // We recommend this pattern to be able to use async/await everywhere

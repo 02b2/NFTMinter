@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import { ConnectButton } from "@web3uikit/web3"
 import { useMoralis } from 'react-moralis'
 import { useEffect, useState } from 'react'
@@ -19,14 +18,10 @@ export default function Home() {
 
   return (
     <div className='w-screen h-screen text-white bg-black flex'>
-      <Head>
-        <title>CryptoEscondido</title>
-        <meta className="CryptoEscondido" content="Web3 Whistleblower Documents" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <nav>
      {/* Connect Button imported from web3uikit
-          Connects to many different wallets out of the box*/}
+          Connects to many different wallets out of the box
+          set Moralis authorization to true, connect to our database*/}
       <ConnectButton moralisAuth={true} />
       <h1>Please connect your wallet</h1>
       </nav>
