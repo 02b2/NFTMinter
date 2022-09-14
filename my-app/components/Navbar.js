@@ -9,7 +9,7 @@ function Navbar () {
       
         <a href="./home">Home</a>
         <a href="./fileupload">FileUpload</a>
-       
+        <a href="./market">market</a>     
         <button
           className="navbar-toggler"
           type="button"
@@ -24,8 +24,6 @@ function Navbar () {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           </ul>
-
-        
         </div>
       </div>
     </div>

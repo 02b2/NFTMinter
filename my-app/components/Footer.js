@@ -17,22 +17,22 @@ function Footer () {
         href="https://www.youtube.com/c/jamesqquick"
         className="youtube" id="youtube"
       >
-        <FontAwesomeIcon icon={faYoutube} size="1x" /><span>Youtube</span>
+        <span>Youtube</span>
       </a>
       <a
         href="https://www.facebook.com/learnbuildteach/"
         className="facebook social"
       >
-        <FontAwesomeIcon icon={faFacebook} size="1x" /><span>Facebook</span>
+        <span>Facebook</span>
       </a>
       <a href="https://www.twitter.com/jamesqquick" className="twitter social">
-        <FontAwesomeIcon icon={faTwitter} size="1x" /><span>Twitter</span>
+        <span>Twitter</span>
       </a>
       <a
         href="https://www.instagram.com/learnbuildteach"
         className="instagram social"
       >
-        <FontAwesomeIcon icon={faInstagram} size="1x" /><span>Instagram</span>
+        <span>Instagram</span>
       </a>
     </div>
       <div className="copyright">

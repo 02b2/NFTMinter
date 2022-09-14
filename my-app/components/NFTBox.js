@@ -39,12 +39,12 @@ export default function NFTBox({ token_address, token_id }) {
     }, [imageLoaded])
 
     return (
-        <div className="w-[600px] h-[400px]">
+        <div className="w-[600px] h-[400px] bg-black text-black text-4xl mx-auto">
             <Card>
                 <Image loader={() => imageURI} src={imageURI} height="200" width="200"/> 
                 <p>{tokenName}</p>
                 <p>{tokenDescription}</p>
-                <button onClick={updateUI} className="w-[200px] h-[50px] bg-green-400 rounded-2xl">Refresh</button>
+                <button onClick={updateUI} className="w-[200px] h-[50px] _Oneon Oneon_btn">Refresh</button>
             </Card>
         </div>
     )

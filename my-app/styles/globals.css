@@ -215,7 +215,7 @@ html, body {
   --------------------------------------------------------------*/
   
   .social-links a::after {
-    font-size: 12px;
+    font-size: 8px;
     display: inline-block;
     color: rgb(248, 244, 242);
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #320efd, 0 0 20px #0e46fd, 0 0 25px #320efd, 0 0 30px #420efd, 0 0 35px #420efd;
@@ -338,6 +338,31 @@ html, body {
     box-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #320efd, 0 0 6px #0e46fd, 0 0 6px #320efd, 0 0 8px #420efd, 0 0 10px #420efd;
 }
 
+
+.Oneon_btn {
+  padding: .10em .10em;
+  width: 60%;
+
+  margin:  0.3rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: 0 0 5px #fff;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: transparent;
+  background-image: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fd160e, 0 0 15px #fd320e, 0 0 15px #fd0e0e, 0 0 10px #fd520e, 0 0 10px #fd5a0e;
+  background-clip: text;
+}
+.Oneon_btn:hover {
+  color: #101010;
+  background-clip: border-box;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #fd160e, 0 0 10px #fd320e, 0 0 10px #fd0e0e, 0 0 10px #fd520e, 0 0 10px #fd5a0e;
+}
+
+
 .bneon_btn {
   padding: .15em .5em;
   width: 30%;
@@ -368,6 +393,12 @@ html, body {
   font-size: 0.9em;
 }
 
+._Oneon{
+  text-align: center;
+  color: rgb(248, 244, 242);
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fd160e, 0 0 20px #fd320e, 0 0 25px #fd0e0e, 0 0 30px #fd520e, 0 0 35px #fd5a0e;
+  font-size: 0.9em;
 
+}
 
 
